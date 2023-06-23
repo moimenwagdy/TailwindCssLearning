@@ -5,7 +5,7 @@ let ul = document.querySelector("ul");
 console.log(ul);
 
 btn.addEventListener("click", () => {
-  ulCont.classList.toggle("hidden");
+  ulCont.classList.toggle("hidden");  
 
   //   if (ulCont.classList.contains("expanded")) {
   //     ulCont.classList.remove("expanded");

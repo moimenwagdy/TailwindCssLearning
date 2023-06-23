@@ -14,8 +14,7 @@
         <div
           class="every-cont flex flex-col md:flex-row justify-center items-center">
           <div class="sm-cont-view w-full flex justify-between items-center">
-            <div
-              class="px-10 brand md:w-1/2 flex flex-col justify-start items-start relative before:bg-blue-500 before:content-'' before:h-full before:w-1 before:absolute before:right-1/3 md:before:-right-1/4">
+            <div class="brand md:w-1/2 flex flex-col justify-start items-start">
               <i
                 class="fa-solid fa-cart-shopping text-blue-700 text-3xl w-1/2"></i>
 
@@ -24,56 +23,40 @@
               </div>
             </div>
             <div
-              class="button flex justify-end items-end md:w1/2 md:hidden px-3 md-px-1 ms-auto">
-              <button
-                class="toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#now">
+              class="button flex justify-end items-end md:w-1/2 md:hidden px-3 md-px-1 ms-auto">
+              <button class="toggler">
                 <i class="text-2xl fa-solid fa-sliders self-end"></i>
               </button>
             </div>
           </div>
           <div
-            class="nav-list hidden md:block md:pe-10 pe-md-24 w-full md:w-1/2"
+            class="nav-list md:border-r-2 md:border-r-blue-700 md:flex w-full md:w-3/4 md:my-1"
             id="now">
             <ul
-              class="pt-2 md:pt-0 md:ms-auto block md:flex md:justify-center md:items-center">
+              class="block md:flex md:justify-center text-center md:items-center mt-1 md:mt-0 md:me-3">
               <li
-                class="flex h-16 md:h-full justify-center py-1 items-center text-center my-1 hover:border-b-blue-700 md:my-3 md:mx-1 md:pb-3 hover:border-b-2">
-                <a
-                  href=""
-                  class="w-full h-full font-normal flex justify-center items-center py-2 bg-blue-700 md:p-2 rounded-md text-white cursor-pointer"
-                  >Home</a
-                >
+                class="py-1 my-1 md:flex md:justify-evenly md:p-2 md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                Home
               </li>
               <li
-                class="flex h-16 justify-center py-1 items-center text-center my-1 hover:border-b-blue-700 md:my-3 md:mx-1 md:pb-3 hover:border-b-2">
-                <a
-                  href=""
-                  class="w-full h-full font-normal flex justify-center items-center py-2 bg-blue-700 md:p-2 rounded-md text-white cursor-pointer"
-                  >About</a
-                >
+                class="py-1 my-1 md:flex md:justify-evenly md:p-2 md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                About
               </li>
               <li
-                class="flex h-16 justify-center py-1 items-center text-center my-1 hover:border-b-blue-700 md:my-3 md:mx-1 md:pb-3 hover:border-b-2">
-                <a
-                  href=""
-                  class="w-full h-full font-normal flex justify-center items-center py-2 bg-blue-700 md:p-2 rounded-md text-white cursor-pointer"
-                  >Download</a
-                >
+                class="py-1 my-1 md:flex md:justify-evenly md:p-2 md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                Download
               </li>
               <li
-                class="flex h-16 justify-center py-1 items-center text-center my-1 hover:border-b-blue-700 md:my-3 md:mx-1 md:pb-3 hover:border-b-2">
-                <a
-                  href=""
-                  class="w-full h-full font-normal flex justify-center items-center py-2 bg-blue-700 md:p-2 rounded-md text-white cursor-pointer"
-                  >Contact</a
-                >
+                class="py-1 my-1 md:flex md:justify-evenly md:p-2 md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                Contact
               </li>
             </ul>
           </div>
-          <i
-            class="cursor-pointer hidden lg:block text-white border-2 border-white rounded-full bg-blue-500 ps-8 pe-2 py-1 text-lg fa-solid fa-magnifying-glass"></i>
+          <div
+            class="ms-10 justify-end items-center cursor-pointer hidden md:flex">
+            <i
+              class="text-white border-2 border-white rounded-full bg-blue-500 ps-8 pe-2 py-1 text-lg fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
       </div>
     </div>
