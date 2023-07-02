@@ -2,19 +2,21 @@ let btn = document.querySelector(".toggler");
 let ulCont = document.querySelector(".nav-list");
 let ul = document.querySelector("ul");
 
-console.log(ul);
+let searchBtn = document.querySelector(".sCont");
+let anotherToggler = document.querySelector(".ndSearch");
+let searchInput = document.querySelector(".search-input");
+
+console.log(anotherToggler);
 
 btn.addEventListener("click", () => {
-  ulCont.classList.toggle("hidden");  
-
-  //   if (ulCont.classList.contains("expanded")) {
-  //     ulCont.classList.remove("expanded");
-  //   } else {
-  //     ulCont.classList.add("expanded");
-  //   }
-  //   if (ulCont.classList.contains("expanded")) {
-  //     ulCont.classList.remove("hidden");
-  //   }
-
-  //   btn.classList.add("hidden");
+  ulCont.classList.toggle("hidden");
 });
+
+searchBtn.onclick = () => {
+  searchInput.classList.toggle("hidden");
+  searchInput.classList.toggle("flex");
+};
+anotherToggler.onclick = () => {
+  searchInput.classList.toggle("hidden");
+  searchInput.classList.toggle("flex");
+};
