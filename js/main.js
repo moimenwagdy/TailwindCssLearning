@@ -24,7 +24,7 @@ anotherToggler.onclick = () => {
 
 btninner = () => {
   if (htmlEle.classList.contains("dark")) {
-    darkBtn.innerHTML = "Ligth";
+    darkBtn.innerHTML = "Light";
     darkBtn.case = "dark";
   } else {
     darkBtn.innerHTML = "Dark";
