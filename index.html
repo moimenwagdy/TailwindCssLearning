@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,22 +9,30 @@
   </head>
   <body>
     <div
-      class="navbar flex justify-between items-center w-full py-2 px-3 bg-neutral-100 flex-wrap">
+      class="navbar flex justify-between items-center w-full py-2 px-3 dark:bg-slate-900 bg-neutral-100 flex-wrap">
       <div class="container m-auto">
         <div
-          class="every-cont flex flex-col md:flex-row justify-center items-center">
+          class="every-cont flex flex-col justify-end md:justify-center md:items-center items-end md:flex-row">
           <div class="sm-cont-view w-full flex justify-between items-center">
-            <div class="brand flex flex-col justify-start items-start ms-2">
-              <i class="fa-solid fa-cart-shopping text-blue-700 text-3xl"></i>
+            <div
+              class="space-y-2 brand flex flex-col justify-start items-start ms-2 w-full">
+              <div class="img shrink-0">
+                <img
+                  src="./images/venmo-logo.png"
+                  class="w-40 min-w-full"
+                  alt="" />
+              </div>
+
+              <!-- <i class="fa-solid fa-cart-shopping text-blue-700 text-3xl"></i>
               <div class="mt-1">
                 <h1 class="tracking-widest text-2xl font-extrabold">
                   SHOPPING AREA
                 </h1>
-              </div>
+              </div> -->
             </div>
             <div
               class="button flex justify-end items-end md:w-1/2 md:hidden px-3 md-px-1 ms-auto">
-              <button class="toggler active:text-blue-700">
+              <button class="toggler active:text-blue-700 dark:text-blue-300">
                 <i class="text-2xl fa-solid fa-sliders self-end"></i>
               </button>
             </div>
@@ -35,19 +43,19 @@
             <ul
               class="block md:flex md:justify-center text-center md:items-center mt-1 md:mt-0 md:me-3">
               <li
-                class="hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                class="dark:bg-blue-300 dark:text-black hover:dark:ring-black hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
                 Home
               </li>
               <li
-                class="hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                class="dark:bg-blue-300 dark:text-black hover:dark:ring-black hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
                 About
               </li>
               <li
-                class="hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                class="dark:bg-blue-300 dark:text-black hover:dark:ring-black hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
                 Download
               </li>
               <li
-                class="hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
+                class="dark:bg-blue-300 dark:text-black hover:dark:ring-black hover:ring-2 hover:ring-blue-700 hover:bg-white hover:text-blue-700 duration-300 cursor-pointer py-2 md:px-3 my-1 md:flex md:justify-evenly md:mb-2 bg-blue-700 md:mx-1 text-white md:items-center rounded-md">
                 Contact
               </li>
 
@@ -63,27 +71,35 @@
               class="px-3 py-1 text-blue-700 rounded-2xl focus-visible:outline-blue-700 w-full md:w-40"
               placeholder="In Your Mind" />
             <button
-              class="px-3 bg-white text-center hover:text-lg duration-300 m-1 rounded-xl hover:bg-blue-700 hover:text-white text-blue-700">
+              class="px-3 bg-white dark:bg-blue-300 dark:text-white text-center hover:text-lg duration-300 m-1 rounded-xl hover:bg-blue-700 hover:text-white text-blue-700">
               Go
             </button>
           </div>
-
-          <div
-            class="sCont ms-4 justify-end items-center cursor-pointer hidden md:flex">
-            <i
-              class="text-white border-2 border-white rounded-full bg-blue-500 ps-8 hover:scale-110 pe-2 py-1 text-lg fa-solid fa-magnifying-glass"></i>
+          <div class="space-x-2 flex justify-center items-center">
+            <div
+              class="sCont ms-4 justify-end items-center cursor-pointer hidden md:flex">
+              <i
+                class="text-white rounded-full dark:bg-blue-300 bg-blue-500 ps-8 hover:scale-110 pe-2 py-1 text-lg fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="switc">
+              <button
+                class="me-auto darkBtn px-3 bg-blue-300 dark:bg-blue-900 dark:text-white text-blue-950 font-bold dar rounded-lg">
+                <i class="fa-regular fa-moon"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="landing-page">
-      <div class="img-container relative">
-        <div class="absolute top-1/2 left-1/2 z-10 -translate-x-1/2">
-          <h1 class="text-lg md:text-3xl lg:text-4xl text-white font-bold">
+    <div class="landing-page overflow-hidden">
+      <div class="img-container relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 z-10 -translate-x-1/2">
+          <h1
+            class="text-sm sm:text-2xl lg:text-4xl text-white dark:text-black dark:text-opacity-70 font-bold">
             Welcome To Take off Land
           </h1>
           <p
-            class="text-center text-white text-sm md:text-base lg:text-lg text-opacity-60">
+            class="text-center dark:text-black dark:text-opacity-70 text-white text-sm md:text-base lg:text-lg text-opacity-60">
             Journey is about to
             <span class="cursor-pointer hover:text-white hover:text-opacity-100"
               >START</span
@@ -96,31 +112,36 @@
           alt="" />
       </div>
     </div>
-    <div class="headding w-full my-16">
+    <div class="headding w-full py-16 dark:bg-slate-900">
       <div class="container grid grid-cols-12 m-auto">
         <div
           class="add-cont flex flex-col justify-center items-center md:flex-row md:justify-star md:items-start col-span-8 col-start-3 md:col-start-2">
-          <i class="fa-solid fa-layer-group text-5xl text-blue-500"></i>
+          <i
+            class="fa-solid fa-layer-group text-5xl dark:text-blue-300 text-blue-500"></i>
           <div
             class="text-cont ms-3 flex justify-center items-center md:justify-start md:items-start flex-col md:flex-row md:flex-wrap">
-            <h1 class=" text-centertext-xl md:text-2xl text-black font-extrabold w-full">
+            <h1
+              class="text-centertext-xl md:text-2xl dark:text-white text-black font-extrabold w-full">
               Free Space To Get More
             </h1>
-            <p class="text-black text-opacity-60 justify-self-end items-end">
+            <p
+              class="text-black dark:text-white text-opacity-60 justify-self-end items-end">
               Start From ZERO
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="grid-test bg-blue-100 flex justify-center items-center">
+    <div
+      class="grid-test bg-blue-100 dark:bg-blue-950 flex justify-center items-center">
       <div class="container">
         <div class="grid grid-cols-12 gap-3 m-3">
           <div
-            class="flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
-            <h1 class="text-xl">moimen wagdy</h1>
-            <h1 class="">Messi</h1>
-            <p class="text-black text-opacity-50">
+            class="dark:bg-slate-600 flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
+            <h1 class="text-xl dark:text-white">moimen wagdy</h1>
+            <h1 class="dark:text-white dark:text-opacity-70">Messi</h1>
+            <p
+              class="text-black dark:text-white dark:text-opacity-75 text-opacity-50">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               velit? Commodi maxime ratione natus doloribus soluta sint possimus
               iure, dolor quam ipsum consequuntur? Nulla sapiente, cupiditate
@@ -128,10 +149,11 @@
             </p>
           </div>
           <div
-            class="flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
-            <h1 class="text-xl">moimen wagdy</h1>
-            <h1 class="">Messi</h1>
-            <p class="text-black text-opacity-50">
+            class="dark:bg-slate-600 flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
+            <h1 class="text-xl dark:text-white">moimen wagdy</h1>
+            <h1 class="dark:text-white dark:text-opacity-70">Messi</h1>
+            <p
+              class="text-black dark:text-white dark:text-opacity-75 text-opacity-50">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               velit? Commodi maxime ratione natus doloribus soluta sint possimus
               iure, dolor quam ipsum consequuntur? Nulla sapiente, cupiditate
@@ -139,10 +161,11 @@
             </p>
           </div>
           <div
-            class="flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
-            <h1 class="text-xl">moimen wagdy</h1>
-            <h1 class="">Messi</h1>
-            <p class="text-black text-opacity-50">
+            class="dark:bg-slate-600 flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
+            <h1 class="text-xl dark:text-white">moimen wagdy</h1>
+            <h1 class="dark:text-white dark:text-opacity-70">Messi</h1>
+            <p
+              class="text-black dark:text-white dark:text-opacity-75 text-opacity-50">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               velit? Commodi maxime ratione natus doloribus soluta sint possimus
               iure, dolor quam ipsum consequuntur? Nulla sapiente, cupiditate
@@ -150,10 +173,11 @@
             </p>
           </div>
           <div
-            class="flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
-            <h1 class="text-xl">moimen wagdy</h1>
-            <h1 class="">Messi</h1>
-            <p class="text-black text-opacity-50">
+            class="dark:bg-slate-600 flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
+            <h1 class="text-xl dark:text-white">moimen wagdy</h1>
+            <h1 class="dark:text-white dark:text-opacity-70">Messi</h1>
+            <p
+              class="text-black dark:text-white dark:text-opacity-75 text-opacity-50">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               velit? Commodi maxime ratione natus doloribus soluta sint possimus
               iure, dolor quam ipsum consequuntur? Nulla sapiente, cupiditate
@@ -161,10 +185,11 @@
             </p>
           </div>
           <div
-            class="flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
-            <h1 class="text-xl">moimen wagdy</h1>
-            <h1 class="">Messi</h1>
-            <p class="text-black text-opacity-50">
+            class="dark:bg-slate-600 flex flex-wrap justify-between items-center col-span-10 col-start-2 md:col-span-6 lg:col-span-4 bg-white rounded-lg p-8">
+            <h1 class="text-xl dark:text-white">moimen wagdy</h1>
+            <h1 class="dark:text-white dark:text-opacity-70">Messi</h1>
+            <p
+              class="text-black dark:text-white dark:text-opacity-75 text-opacity-50">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
               velit? Commodi maxime ratione natus doloribus soluta sint possimus
               iure, dolor quam ipsum consequuntur? Nulla sapiente, cupiditate
@@ -174,6 +199,7 @@
         </div>
       </div>
     </div>
+    <div class="text-center sm:text-left">moimen wagdy</div>
 
     <script src="./js/all.min.js"></script>
     <script src="./js/main.js"></script>
